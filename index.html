@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Ahmed Shaban | MIS Graduate & Web Developer</title>
+    <meta name="description" content="Personal portfolio of Mohamed Ahmed Shaban - Management Information Systems graduate, Junior Web Developer, and Business & Product Analysis Foundations based in Cairo, Egypt." />
+    <meta name="keywords" content="Mohamed Ahmed Shaban, Management Information Systems, Junior Web Developer, Business Analysis, Cairo, Egypt, React, Laravel, Full Stack, Blood Plasma Donation System" />
+    <meta name="author" content="Mohamed Ahmed Shaban" />
+
+    <!-- Mobile Browser Theme Color -->
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#050811" media="(prefers-color-scheme: dark)" />
+
+    <!-- Zero-FOUC Dark Mode Initialization Script -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('shaban-portfolio-theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'dark' || (!saved && prefersDark) || !saved) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mohamed Ahmed Shaban | MIS Graduate & Web Developer" />
+    <meta property="og:description" content="Connecting technical web solutions with real business needs. Management Information Systems Graduate & Junior Web Developer." />
+
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Favicon: Clean geometric tech logo -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='none'><rect width='32' height='32' rx='8' fill='%230b1329'/><path d='M8 22L16 10L24 22' stroke='%2338bdf8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/><path d='M11.5 17H20.5' stroke='%230284c7' stroke-width='2' stroke-linecap='round'/><circle cx='16' cy='10' r='2' fill='%2338bdf8'/></svg>" />
+  </head>
+  <body class="bg-slate-50 text-slate-800 dark:bg-navy-950 dark:text-slate-100 antialiased selection:bg-brand-500/20 selection:text-brand-500 transition-colors duration-200 overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
